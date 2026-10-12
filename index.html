@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aryan Kumar Shah | Developer Portfolio</title>
-  <meta name="description" content="Official portfolio of Aryan Kumar Shah, a BCA student interested in software development, programming, and cybersecurity.">
+  <title>Aryan Kumar Shah | Software Developer Portfolio</title>
+  <meta name="description" content="Official portfolio of Aryan Kumar Shah, a BCA student at Prajnanananda Institute of Technology & Management, learning Python, C programming, and software development.">
   <meta name="author" content="Aryan Kumar Shah">
   <meta name="theme-color" content="#0b1020">
 
   <link rel="canonical" href="https://aryancodes-dev.github.io/">
 
-  <meta property="og:title" content="Aryan Kumar Shah | Developer Portfolio">
-  <meta property="og:description" content="Explore my journey in programming, software development, and cybersecurity.">
+  <meta property="og:title" content="Aryan Kumar Shah | Software Developer Portfolio">
+  <meta property="og:description" content="Explore Aryan Kumar Shah's education, programming skills, projects, and journey in software development.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://aryancodes-dev.github.io/">
+  <meta property="og:image" content="https://aryancodes-dev.github.io/profile.jpg">
 
   <script type="application/ld+json">
   {
@@ -25,7 +26,8 @@
       "name": "Aryan Kumar Shah",
       "url": "https://aryancodes-dev.github.io/",
       "image": "https://aryancodes-dev.github.io/profile.jpg",
-      "description": "BCA student interested in programming, software development, and cybersecurity.",
+      "description": "BCA student learning programming and software development.",
+      "email": "aryankumarshah05@gmail.com",
       "sameAs": [
         "https://github.com/aryancodes-dev",
         "https://www.linkedin.com/in/aʀʏᴀɴ-kumar-shah-933222443"
@@ -35,9 +37,15 @@
   </script>
 
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -46,10 +54,24 @@
       line-height: 1.7;
     }
 
-    a { color: #80aaff; text-decoration: none; }
-    a:hover { color: white; }
+    a {
+      color: #80aaff;
+      text-decoration: none;
+    }
 
-    .container { width: min(1050px, 90%); margin: auto; }
+    a:hover {
+      color: white;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #80aaff;
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: auto;
+    }
 
     header {
       padding: 22px 0;
@@ -64,9 +86,16 @@
       gap: 16px;
     }
 
-    .brand { font-size: 1.2rem; font-weight: 800; }
+    .brand {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
 
-    .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+    .navlinks {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
 
     .hero {
       min-height: 490px;
@@ -77,7 +106,9 @@
       padding: 70px 0;
     }
 
-    .intro { max-width: 650px; }
+    .intro {
+      max-width: 650px;
+    }
 
     .eyebrow {
       color: #80aaff;
@@ -94,11 +125,21 @@
       letter-spacing: -2px;
     }
 
-    h1 span { color: #80aaff; }
+    h1 span {
+      color: #80aaff;
+    }
 
-    .lead { color: #bdc8df; font-size: 1.08rem; }
+    .lead {
+      color: #bdc8df;
+      font-size: 1.08rem;
+    }
 
-    .actions { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 26px;
+      flex-wrap: wrap;
+    }
 
     .btn {
       display: inline-block;
@@ -108,7 +149,16 @@
       font-weight: bold;
     }
 
-    .primary { background: #80aaff; color: #0b1020; border-color: #80aaff; }
+    .primary {
+      background: #80aaff;
+      color: #0b1020;
+      border-color: #80aaff;
+    }
+
+    .primary:hover {
+      background: #a7c4ff;
+      color: #0b1020;
+    }
 
     .portrait {
       width: 230px;
@@ -119,11 +169,24 @@
       background: #151e33;
     }
 
-    section { padding: 55px 0; border-top: 1px solid #252e45; }
+    section {
+      padding: 55px 0;
+      border-top: 1px solid #252e45;
+      scroll-margin-top: 20px;
+    }
 
-    h2 { font-size: 1.9rem; margin-bottom: 18px; }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 18px;
+    }
 
-    .muted { color: #bdc8df; }
+    h3 {
+      line-height: 1.4;
+    }
+
+    .muted {
+      color: #bdc8df;
+    }
 
     .grid {
       display: grid;
@@ -139,9 +202,16 @@
       background: #111a2e;
     }
 
-    .card h3 { margin-bottom: 8px; }
+    .card h3 {
+      margin-bottom: 8px;
+    }
 
-    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
 
     .tag {
       background: #172440;
@@ -151,13 +221,38 @@
       font-size: .9rem;
     }
 
-    footer { padding: 28px 0; color: #aab8d1; font-size: .9rem; }
+    .email {
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: #aab8d1;
+      font-size: .9rem;
+      border-top: 1px solid #252e45;
+    }
 
     @media (max-width: 650px) {
-      .hero { flex-direction: column-reverse; align-items: flex-start; padding: 48px 0; }
-      .portrait { width: 165px; height: 185px; }
-      .navlinks { gap: 12px; font-size: .9rem; }
-      h1 { letter-spacing: -1px; }
+      .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 48px 0;
+        gap: 28px;
+      }
+
+      .portrait {
+        width: 165px;
+        height: 185px;
+      }
+
+      .navlinks {
+        gap: 12px;
+        font-size: .9rem;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
     }
   </style>
 </head>
@@ -165,129 +260,171 @@
 <body>
   <header>
     <div class="container">
-      <nav>
+      <nav aria-label="Main navigation">
         <a class="brand" href="#home">Aryan Kumar Shah</a>
+
         <div class="navlinks">
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Connect</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero" id="home" style="border:0">
+    <section class="hero" id="home" style="border: 0">
       <div class="intro">
-        <p class="eyebrow">BCA Student · Aspiring Developer</p>
+        <p class="eyebrow">BCA Student · Aspiring Software Developer</p>
+
         <h1>Hi, I'm <span>Aryan Kumar Shah.</span></h1>
+
         <p class="lead">
           I'm pursuing a Bachelor of Computer Applications at
           Prajnanananda Institute of Technology & Management.
-          I'm learning programming and exploring software development
-          and cybersecurity, one project at a time.
+          I'm building my programming fundamentals, learning to solve
+          problems with code, and working toward becoming a software
+          developer.
         </p>
+
         <div class="actions">
           <a class="btn primary" href="#projects">Explore My Work</a>
-          <a class="btn" href="https://github.com/aryancodes-dev"
-             target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+
+          <a class="btn"
+             href="https://github.com/aryancodes-dev"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub Profile ↗
+          </a>
         </div>
       </div>
 
-      <img class="portrait" src="profile.jpg"
-           alt="Portrait of Aryan Kumar Shah"
-           onerror="this.style.display='none'">
+      <img
+        class="portrait"
+        src="profile.jpg"
+        alt="Portrait of Aryan Kumar Shah"
+        onerror="this.style.display='none'">
     </section>
 
     <section id="about">
-      <p class="eyebrow">A little about me</p>
-      <h2>Building my future in technology.</h2>
+      <p class="eyebrow">About Me</p>
+      <h2>Learning today. Building for tomorrow.</h2>
+
       <p class="muted">
-        I'm a BCA student developing my foundation in computer science.
-        I enjoy learning how software works, improving my coding skills,
-        and discovering how digital systems can be made more secure.
-        My goal is to keep learning, build useful projects, and grow
-        into a skilled technology professional.
+        I'm a BCA student passionate about programming and software
+        development. I'm developing my foundation in computer science,
+        improving my coding skills, and learning how to turn ideas into
+        useful applications. My goal is to become a skilled software
+        developer by practising consistently, building real projects,
+        and learning new technologies step by step.
       </p>
     </section>
 
     <section id="education">
-      <p class="eyebrow">My academic journey</p>
+      <p class="eyebrow">My Academic Journey</p>
       <h2>Education</h2>
-      <div class="card">
+
+      <article class="card">
         <h3>Bachelor of Computer Applications (BCA)</h3>
-        <p class="muted">Prajnanananda Institute of Technology & Management</p>
-        <p class="muted">Currently pursuing · Kolkata, West Bengal, India</p>
-      </div>
+        <p class="muted">
+          Prajnanananda Institute of Technology & Management
+        </p>
+        <p class="muted">2026–2030 · Currently pursuing</p>
+        <p class="muted">MAKAUT-affiliated institution</p>
+        <p class="muted">Kolkata, West Bengal, India</p>
+      </article>
     </section>
 
     <section id="skills">
-      <p class="eyebrow">What I'm learning</p>
-      <h2>Skills & Interests</h2>
+      <p class="eyebrow">My Technical Foundation</p>
+      <h2>Skills & Learning</h2>
+
       <p class="muted">
-        My current focus is building strong fundamentals and gaining
-        practical experience.
+        I'm strengthening my fundamentals through regular practice
+        and hands-on learning.
       </p>
+
       <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">C Programming</span>
+        <span class="tag">Python — Learning</span>
+        <span class="tag">C Programming — Learning</span>
         <span class="tag">Git & GitHub</span>
-        <span class="tag">Software Development</span>
-        <span class="tag">Cybersecurity Fundamentals</span>
-        <span class="tag">Problem Solving</span>
       </div>
     </section>
 
     <section id="projects">
-      <p class="eyebrow">Learning by building</p>
-      <h2>Projects</h2>
+      <p class="eyebrow">My Work</p>
+      <h2>Projects & Repositories</h2>
+
+      <p class="muted">
+        Explore my GitHub profile to see my code, programming practice,
+        and projects as I develop my skills.
+      </p>
+
       <div class="grid">
         <article class="card">
-          <h3>My GitHub Repositories</h3>
-          <p class="muted">Explore my coding work and follow my progress.</p>
-          <p style="margin-top:14px">
-            <a href="https://github.com/aryancodes-dev"
-               target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
-          </p>
-        </article>
-        <article class="card">
-          <h3>Future Projects</h3>
+          <h3>GitHub Repositories</h3>
           <p class="muted">
-            I'm continuing to learn and will add completed programming
-            and cybersecurity projects here as I build them.
+            Browse my repositories, explore my code, and follow my
+            progress as I learn and build.
+          </p>
+
+          <p style="margin-top: 14px">
+            <a href="https://github.com/aryancodes-dev"
+               target="_blank"
+               rel="noopener noreferrer">
+              Explore My Repositories ↗
+            </a>
           </p>
         </article>
       </div>
     </section>
 
     <section id="contact">
-      <p class="eyebrow">Find me online</p>
-      <h2>Let's connect.</h2>
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Let's Connect.</h2>
+
       <p class="muted">
-        Follow my learning journey, explore my work, or connect with me
-        professionally.
+        Have a professional opportunity, project idea, or reason to
+        connect? You can reach me by email or find me on GitHub and
+        LinkedIn.
       </p>
+
       <div class="actions">
-        <a class="btn primary"
-           href="https://www.linkedin.com/in/aʀʏᴀɴ-kumar-shah-933222443"
-           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn primary email"
+           href="mailto:aryankumarshah05@gmail.com">
+          Email Me
+        </a>
+
         <a class="btn"
            href="https://github.com/aryancodes-dev"
-           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a class="btn"
+           href="https://www.linkedin.com/in/aʀʏᴀɴ-kumar-shah-933222443"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
       </div>
+
+      <p class="muted email" style="margin-top: 16px">
+        Email:
+        <a href="mailto:aryankumarshah05@gmail.com">
+          aryankumarshah05@gmail.com
+        </a>
+      </p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Aryan Kumar Shah · Personal portfolio
+      © 2026 Aryan Kumar Shah
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
