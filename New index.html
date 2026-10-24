@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aryan Kumar Shah — Software Developer Portfolio</title>
+<meta name="description" content="Aryan Kumar Shah is a BCA student at Prajnanananda Institute of Technology & Management (MAKAUT), Kolkata, and an aspiring software developer working with Python, Java, JavaScript, C and C++.">
+<meta name="author" content="Aryan Kumar Shah">
+<meta property="og:title" content="Aryan Kumar Shah — Software Developer Portfolio">
+<meta property="og:description" content="BCA Student · Aspiring Software Developer · Python, Java, JavaScript, C, C++">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aryancodes-dev.github.io/">
+<meta property="og:image" content="https://aryancodes-dev.github.io/aryan-kumar-shah.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="aryan-kumar-shah.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aryan Kumar Shah",
+  "jobTitle": "Aspiring Software Developer",
+  "description": "BCA student at Prajnanananda Institute of Technology & Management (MAKAUT-affiliated), Kolkata. Aspiring software developer.",
+  "url": "https://aryancodes-dev.github.io/",
+  "image": "https://aryancodes-dev.github.io/aryan-kumar-shah.jpg",
+  "email": "mailto:aryankumarshah05@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Kolkata", "addressRegion": "West Bengal", "addressCountry": "IN" },
+  "affiliation": { "@type": "Organization", "name": "Prajnanananda Institute of Technology & Management" },
+  "alumniOf": { "@type": "Organization", "name": "Maulana Abul Kalam Azad University of Technology (MAKAUT)" },
+  "knowsAbout": ["Python", "Java", "JavaScript", "C Programming", "C++", "HTML", "CSS", "Git", "GitHub", "Data Structures and Algorithms", "Object-Oriented Programming"],
+  "sameAs": [
+    "https://github.com/aryancodes-dev",
+    "https://www.linkedin.com/in/aryan-kumar-shah-933222443",
+    "https://www.youtube.com/@aryancodes_dev",
+    "https://x.com/aryancodes_dev",
+    "https://dev.to/aryancodes_dev",
+    "https://leetcode.com/u/aryancodes_dev/",
+    "https://gravatar.com/vibranteac4a6b225",
+    "https://stackoverflow.com/users/33234010",
+    "https://www.hackerrank.com/profile/aryancodes_dev",
+    "https://linktr.ee/aryancodes_dev"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0c11; --panel:#10131b; --panel2:#0d1017;
+    --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.15);
+    --txt:#f2f4f9; --mut:#9aa3b5;
+    --acc:#6e8bff; --acc2:#a78bfa; --acc-soft:rgba(110,139,255,.12);
+    --r:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--acc);color:#fff}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;position:relative}
+
+  /* ---------- animated background (Linear / Stripe style) ---------- */
+  .bg-aurora{position:fixed;inset:0;z-index:-2;overflow:hidden;background:var(--bg)}
+  .blob{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform}
+  .blob.b1{width:560px;height:560px;top:-180px;left:-120px;background:rgba(59,80,220,.34);animation:drift1 26s ease-in-out infinite alternate}
+  .blob.b2{width:520px;height:520px;top:-140px;right:-140px;background:rgba(124,58,237,.26);animation:drift2 32s ease-in-out infinite alternate}
+  .blob.b3{width:640px;height:640px;bottom:-320px;left:38%;background:rgba(37,99,235,.20);animation:drift1 38s ease-in-out infinite alternate-reverse}
+  @keyframes drift1{to{transform:translate(90px,60px) scale(1.12)}}
+  @keyframes drift2{to{transform:translate(-80px,90px) scale(1.08)}}
+  .bg-grid{position:fixed;inset:0;z-index:-1;
+    background-image:linear-gradient(rgba(255,255,255,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.038) 1px,transparent 1px);
+    background-size:54px 54px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 55% at 50% 0%,#000 25%,transparent 78%);
+            mask-image:radial-gradient(ellipse 90% 55% at 50% 0%,#000 25%,transparent 78%)}
+  #progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:60;
+    background:linear-gradient(90deg,var(--acc),var(--acc2))}
+
+  /* nav */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+  nav.scrolled{background:rgba(10,12,17,.85);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+  .logo i{font-style:normal;color:var(--acc)}
+  .nav-links{display:flex;gap:32px;font-size:.92rem;color:var(--mut);font-weight:500}
+  .nav-links a{transition:color .2s}.nav-links a:hover{color:var(--txt)}
+  @media(max-width:680px){.nav-links{display:none}}
+
+  /* hero */
+  header{padding:164px 0 0;position:relative}
+  #glow{position:absolute;width:640px;height:640px;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle,rgba(110,139,255,.09),transparent 65%);
+    transform:translate(-50%,-50%);left:30%;top:20%;transition:opacity .4s}
+  .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;position:relative;z-index:1}
+  @media(max-width:880px){.hero{grid-template-columns:1fr;gap:40px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.85rem;color:var(--mut);font-weight:500;
+    border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:rgba(13,16,23,.7)}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#3fb97c;box-shadow:0 0 8px #3fb97c;animation:pulse 2.2s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .hero h1{font-size:clamp(2.6rem,5.6vw,3.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.08;margin:24px 0 14px;
+    animation:rise .8s ease both}
+  .hero .role{font-size:clamp(1.05rem,2vw,1.25rem);font-weight:600;letter-spacing:-.01em;
+    background:linear-gradient(90deg,#7ea0ff,#a78bfa,#7ea0ff);background-size:200% 100%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:rise .8s ease .1s both,shift 7s linear infinite}
+  @keyframes shift{to{background-position:200% 0}}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .hero p.lead{color:var(--mut);font-size:1.04rem;max-width:540px;margin:14px 0 32px;animation:rise .8s ease .2s both}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;animation:rise .8s ease .3s both}
+  .btn{padding:12px 24px;border-radius:10px;font-weight:600;font-size:.95rem;transition:.25s;display:inline-block;position:relative;overflow:hidden}
+  .btn-w{background:#fff;color:#0a0c11}
+  .btn-w::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;
+    background:linear-gradient(100deg,transparent,rgba(110,139,255,.35),transparent);transform:skewX(-20deg);transition:left .6s}
+  .btn-w:hover::after{left:130%}
+  .btn-w:hover{background:#e8edf9;transform:translateY(-2px)}
+  .btn-o{border:1px solid var(--line2);color:var(--txt)}
+  .btn-o:hover{border-color:rgba(255,255,255,.38);background:rgba(255,255,255,.04);transform:translateY(-2px)}
+  .photo{justify-self:end;width:min(320px,80vw);animation:floaty 7s ease-in-out infinite}
+  @media(max-width:880px){.photo{justify-self:start}}
+  @keyframes floaty{50%{transform:translateY(-7px)}}
+  .photo img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:20px;border:1px solid var(--line2);
+    display:block;background:var(--panel);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .photo .cap{display:flex;justify-content:space-between;margin-top:14px;font-size:.85rem;color:var(--mut)}
+  .photo .cap b{color:var(--txt);font-weight:600}
+
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);margin-top:76px;position:relative;z-index:1;background:rgba(10,12,17,.45)}
+  @media(max-width:680px){.facts{grid-template-columns:1fr}}
+  .fact{padding:22px 26px}
+  .fact + .fact{border-left:1px solid var(--line)}
+  @media(max-width:680px){.fact + .fact{border-left:none;border-top:1px solid var(--line)}}
+  .fact .k{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.16em;color:var(--mut);text-transform:uppercase}
+  .fact .v{font-weight:600;font-size:1rem;margin-top:4px}
+
+  /* sections */
+  section{padding:88px 0 8px}
+  .label{font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--acc);display:flex;align-items:center;gap:12px}
+  .label::before{content:"";width:26px;height:1px;background:var(--acc)}
+  .sec-title{font-size:clamp(1.65rem,3.6vw,2.2rem);font-weight:700;letter-spacing:-.02em;margin:12px 0 14px}
+  .sec-sub{color:var(--mut);max-width:660px;font-size:1rem}
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  .about p{color:var(--mut);max-width:760px;margin-top:6px}
+  .about p + p{margin-top:14px}
+  .objective{margin-top:26px;border-left:2px solid var(--acc);background:var(--acc-soft);
+    padding:18px 22px;border-radius:0 12px 12px 0;max-width:760px}
+  .objective .k{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.16em;color:var(--acc);text-transform:uppercase}
+  .objective p{color:var(--txt);margin-top:5px;font-size:.99rem}
+
+  .skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+  @media(max-width:760px){.skill-grid{grid-template-columns:1fr}}
+  .skill-card{background:rgba(16,19,27,.82);border:1px solid var(--line);border-radius:var(--r);
+    padding:26px 28px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+  .skill-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--acc),var(--acc2));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+  .skill-card:hover{transform:translateY(-4px);border-color:var(--line2)}
+  .skill-card:hover::before{transform:scaleX(1)}
+  .skill-card h3{font-size:1.02rem;font-weight:600;letter-spacing:-.01em}
+  .skill-card .sub{color:var(--mut);font-size:.88rem;margin:3px 0 16px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-size:.88rem;font-weight:500;padding:6px 14px;border-radius:999px;border:1px solid var(--line2);
+    background:var(--panel2);color:var(--txt);transition:.2s}
+  .chip:hover{border-color:rgba(110,139,255,.55);transform:translateY(-1px)}
+  .chip.core{border-color:rgba(110,139,255,.4);background:var(--acc-soft)}
+  .note{color:var(--mut);font-size:.9rem;margin-top:18px}
+
+  .edu-card{background:rgba(16,19,27,.82);border:1px solid var(--line);border-radius:var(--r);
+    padding:30px 32px;margin-top:32px;display:flex;gap:28px;transition:transform .25s,border-color .25s}
+  .edu-card:hover{border-color:var(--line2);transform:translateY(-3px)}
+  @media(max-width:680px){.edu-card{flex-direction:column;gap:10px}}
+  .edu-card .yr{font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:.9rem;white-space:nowrap;padding-top:3px}
+  .edu-card h3{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+  .edu-card .inst{font-weight:500;margin-top:2px}
+  .edu-card p{color:var(--mut);font-size:.95rem;margin-top:6px}
+
+  .proj-card{margin-top:32px;border:1px solid var(--line);border-radius:var(--r);
+    padding:40px 34px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+    background:linear-gradient(120deg,rgba(110,139,255,.10),rgba(167,139,250,.06) 55%,rgba(16,19,27,.85));
+    background-size:180% 100%;animation:projshift 9s ease-in-out infinite alternate}
+  @keyframes projshift{to{background-position:100% 0}}
+  .proj-card h3{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+  .proj-card p{color:var(--mut);max-width:520px;margin-top:6px;font-size:.97rem}
+
+  .contact-list{margin-top:32px;border-top:1px solid var(--line)}
+  .contact-row{display:flex;align-items:center;justify-content:space-between;gap:18px;
+    padding:20px 6px;border-bottom:1px solid var(--line);transition:background .2s,padding-left .2s}
+  .contact-row:hover{background:rgba(255,255,255,.02);padding-left:14px}
+  .contact-row .who{display:flex;flex-direction:column}
+  .contact-row .name{font-weight:600;font-size:1rem}
+  .contact-row .handle{color:var(--mut);font-size:.9rem}
+  .contact-row .arr{color:var(--mut);font-size:1.15rem;transition:.2s}
+  .contact-row:hover .arr{color:var(--acc);transform:translate(2px,-2px)}
+
+  footer{margin-top:96px;border-top:1px solid var(--line);padding:28px 0 34px}
+  .foot-in{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:.88rem}
+  .foot-in b{color:var(--txt);font-weight:600}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important}
+  }
+</style>
+</head>
+<body>
+<div class="bg-aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+<div class="bg-grid"></div>
+<div id="progress"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">Aryan Kumar Shah</a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div id="glow"></div>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Open to internships &amp; learning opportunities</span>
+        <h1>Aryan Kumar Shah</h1>
+        <div class="role">Aspiring Software Developer</div>
+        <p class="lead">BCA student at Prajnanananda Institute of Technology &amp; Management (MAKAUT),
+        building strong computer-science fundamentals and practical programming skills — one project at a time.</p>
+        <div class="btns">
+          <a class="btn btn-w" href="https://github.com/aryancodes-dev" target="_blank" rel="noopener">View GitHub</a>
+          <a class="btn btn-o" href="https://www.linkedin.com/in/aryan-kumar-shah-933222443" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-o" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="aryan-kumar-shah.jpg" alt="Aryan Kumar Shah - Software Developer">
+        <div class="cap"><span><b>Aryan Kumar Shah</b></span><span>Kolkata, India</span></div>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><div class="k">Degree</div><div class="v">BCA · 2026 — 2030</div></div>
+      <div class="fact"><div class="k">Institution</div><div class="v">PITM · MAKAUT, West Bengal</div></div>
+      <div class="fact"><div class="k">Focus</div><div class="v">Software Development</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about reveal">
+    <div class="label">About</div>
+    <h2 class="sec-title">Learning today. Building for tomorrow.</h2>
+    <p>I am a Bachelor of Computer Applications student who is serious about one thing: becoming a
+    genuinely good software developer. My approach is fundamentals first — how programs actually run,
+    how data is structured, and how clean code is written — because that is what separates developers
+    who can build anything from those who can only follow tutorials.</p>
+    <p>Alongside my degree, I practise programming daily, build projects, and share what I learn
+    through my coding channel — teaching a concept is the fastest way to master it.</p>
+    <div class="objective">
+      <div class="k">Career Objective</div>
+      <p>To build the problem-solving depth, engineering discipline and CS fundamentals expected at
+      top product and technology companies — and to earn my place there through consistent work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="label">Technical Skills</div>
+    <h2 class="sec-title">Technologies I work with</h2>
+    <p class="sec-sub">The stack I am building my foundation on — the languages, tools and core subjects
+    that software roles at serious companies are built around.</p>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <div class="sub">Core languages for development &amp; problem solving</div>
+        <div class="chips">
+          <span class="chip core">Python</span><span class="chip core">Java</span>
+          <span class="chip core">JavaScript</span><span class="chip core">C</span>
+          <span class="chip core">C++</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Web Technologies</h3>
+        <div class="sub">Building for the browser</div>
+        <div class="chips">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Core Computer Science</h3>
+        <div class="sub">The fundamentals interviews are built on — currently deepening</div>
+        <div class="chips">
+          <span class="chip">Data Structures</span><span class="chip">Algorithms</span>
+          <span class="chip">Object-Oriented Programming</span><span class="chip">Problem Solving</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="sub">Everyday developer workflow</div>
+        <div class="chips">
+          <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span>
+        </div>
+      </div>
+    </div>
+    <p class="note">Currently strengthening these through degree coursework, daily practice and projects.</p>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap reveal">
+    <div class="label">Education</div>
+    <h2 class="sec-title">Academic background</h2>
+    <div class="edu-card">
+      <div class="yr">2026 — 2030</div>
+      <div>
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <div class="inst">Prajnanananda Institute of Technology &amp; Management</div>
+        <p>Affiliated to Maulana Abul Kalam Azad University of Technology (MAKAUT) · Kolkata, West Bengal, India · Currently pursuing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATIONS — when Aryan earns certificates, add a section
+     here following the edu-card pattern (one card per certificate,
+     with issuer + year). Nothing else on the page needs to change.
+     ============================================================ -->
+
+<section id="projects">
+  <div class="wrap reveal">
+    <div class="label">Projects</div>
+    <h2 class="sec-title">Work &amp; repositories</h2>
+    <div class="proj-card">
+      <div>
+        <h3>Projects live on GitHub</h3>
+        <p>My code, practice work and projects are published on GitHub and kept up to date there —
+        the best place to see what I am building right now.</p>
+      </div>
+      <a class="btn btn-w" href="https://github.com/aryancodes-dev" target="_blank" rel="noopener">Explore Repositories</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="label">Contact</div>
+    <h2 class="sec-title">Get in touch</h2>
+    <p class="sec-sub">For internships, projects, or a professional connection — reach me on any of these.</p>
+    <div class="contact-list">
+      <a class="contact-row" href="mailto:aryankumarshah05@gmail.com">
+        <span class="who"><span class="name">Email</span><span class="handle">aryankumarshah05@gmail.com</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="contact-row" href="https://github.com/aryancodes-dev" target="_blank" rel="noopener">
+        <span class="who"><span class="name">GitHub</span><span class="handle">github.com/aryancodes-dev</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="contact-row" href="https://www.linkedin.com/in/aryan-kumar-shah-933222443" target="_blank" rel="noopener">
+        <span class="who"><span class="name">LinkedIn</span><span class="handle">Aryan Kumar Shah</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="contact-row" href="https://www.youtube.com/@aryancodes_dev" target="_blank" rel="noopener">
+        <span class="who"><span class="name">YouTube</span><span class="handle">@aryancodes_dev — coding content</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="contact-row" href="https://x.com/aryancodes_dev" target="_blank" rel="noopener">
+        <span class="who"><span class="name">X (Twitter)</span><span class="handle">@aryancodes_dev</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="contact-row" href="https://linktr.ee/aryancodes_dev" target="_blank" rel="noopener">
+        <span class="who"><span class="name">All Links</span><span class="handle">linktr.ee/aryancodes_dev — every profile in one place</span></span>
+        <span class="arr">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© <span id="yr">2026</span> <b>Aryan Kumar Shah</b></span>
+    <span>Learning today. Building for tomorrow.</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  const bar = document.getElementById('progress');
+  addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', scrollY > 24);
+    const h = document.documentElement;
+    bar.style.width = (scrollY / (h.scrollHeight - innerHeight) * 100) + '%';
+  }, { passive: true });
+
+  // soft glow follows the cursor in the hero (desktop pointers only)
+  const glow = document.getElementById('glow');
+  if (matchMedia('(pointer:fine)').matches) {
+    addEventListener('mousemove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = Math.min(e.clientY, innerHeight) + 'px';
+    }, { passive: true });
+  } else { glow.style.display = 'none'; }
+
+  // scroll reveal with a gentle stagger between siblings
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((s, i) => {
+    s.style.transitionDelay = (i % 3) * 0.08 + 's';
+    io.observe(s);
+  });
+</script>
+</body>
+</html>
